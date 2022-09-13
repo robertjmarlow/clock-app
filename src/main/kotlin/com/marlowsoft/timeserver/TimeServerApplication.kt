@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class TimeServerApplication
 
 fun main(args: Array<String>) {
-	runApplication<TimeServerApplication>(*args)
+    runApplication<TimeServerApplication>(*args)
 }
