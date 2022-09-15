@@ -18,7 +18,7 @@ import java.time.ZonedDateTime
 
 @WebMvcTest
 class TimeControllersTests(@Autowired val mockMvc: MockMvc) {
-    val jacksonObjectMapper: ObjectMapper = jacksonObjectMapper().registerModules(JavaTimeModule())
+    private val jacksonObjectMapper: ObjectMapper = jacksonObjectMapper().registerModules(JavaTimeModule())
 
     @Test
     fun `Get current date and time`() {
